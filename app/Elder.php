@@ -40,6 +40,7 @@ class Elder extends Model
         'oi_senior_citizen_id',
         'oi_pagibig',
         'status',
+        'archived',
         'created_by',
         'updated_by',
         'cp_work',

@@ -16,6 +16,7 @@ class CreateEventsTable extends Migration
         Schema::create('events', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('title')->nullable();
+            $table->string('time')->nullable();
             $table->string('start')->nullable();
             $table->boolean('allDay')->default(false);
             $table->string('type')->nullable();

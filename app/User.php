@@ -23,6 +23,7 @@ class User extends Authenticatable
         'email',
         'username',
         'password',
+        'contact_no',
         'nick_name',
         'gender',
         'image',
@@ -41,6 +42,7 @@ class User extends Authenticatable
         'oi_pagibig',
         'role',
         'status',
+        'remarks',
         'archived',
         'created_by',
         'updated_by'

@@ -18,6 +18,7 @@ class Archive extends Model
         'directtory',
         'date_uploaded',
         'document_type',
+        'archived',
         'file_type',
         'created_by',
         'updated_by',

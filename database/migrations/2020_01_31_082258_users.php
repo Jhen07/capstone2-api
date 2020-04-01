@@ -32,12 +32,14 @@ class Users extends Migration
             $table->string('civil_status')->nullable(); // 1=single, 2=married
             $table->string('nationality')->nullable();
             $table->string('address')->nullable();
+            $table->string('contact_no')->nullable();
             $table->string('date_hired')->nullable();
             $table->string('oi_phil_health')->nullable();
             $table->string('oi_sss')->nullable();
             $table->string('oi_umid')->nullable();
             $table->string('oi_pagibig')->nullable();
-            $table->integer('status')->nullable(); // 0=inactive, 1=active
+            $table->integer('remarks')->nullable(); // 0=fulltime, 1=parttime, 2=resigned
+            $table->integer('status')->nullable(); // 0=offline, 1=online
             $table->integer('role')->default(0);  // 0=no, 1=yes 
             $table->boolean('archived')->default(false);           
             $table->integer('created_by')->nullable();

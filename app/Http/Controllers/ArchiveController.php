@@ -37,6 +37,12 @@ class ArchiveController extends Controller
 
     public function update(Request $request, $id)
     {
+        $User = User::findOrFail($id);
+        $data = $request->all();
+        $User->update($data);
+
+        return $User;
+
         $Archive = Archive::findOrFail($id);
         $Archive->update($request->all());
 

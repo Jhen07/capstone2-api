@@ -15,7 +15,8 @@ class Medicine extends Model
      */
     protected $fillable = [
         'medicine_name',
-        'expiration_date',
+        'expdate_buffer',
+        'expdate_stock',
         'type_of_medicine_id',
         'type_of_medicine_description',
         'buffer',

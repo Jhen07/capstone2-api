@@ -39,7 +39,7 @@ Route::resource('file-upload', 'FileUploadController', ['only' => ['index', 'sho
 Route::resource('note', 'NoteController', ['only' => ['index', 'show', 'store', 'update', 'destroy']]);
 Route::resource('notification', 'NotificationController', ['only' => ['index', 'show', 'store', 'update', 'destroy']]);
 
-//Route::resource('archives-get-all-by-archive', 'ArchiveController@getAllByArchived', ['except' => ['destroy']]);
+Route::resource('archives-get-all-by-archive', 'ArchiveController@getAllByArchived', ['except' => ['destroy']]);
 Route::get('archives-get-all-by-archive', 'ArchiveController@getAllByArchived');
 Route::post('change-password', 'UserController@updateEmailPassword');
 Route::get('task-reports-by-date', 'TaskReportsController@getTaskByDateToday');
